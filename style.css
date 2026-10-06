@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff8f2;
+  color: #222;
+}
+
+.page,
+.auth-container,
+.chat-container {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 30px;
+}
+
+h1 {
+  color: #e85d04;
+}
+
+.auth-container {
+  max-width: 450px;
+}
+
+.auth-card,
+.restaurant-card,
+.result,
+.chat-container {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #00000015;
+}
+
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  padding: 11px 16px;
+  border-radius: 7px;
+}
+
+.primary {
+  background: #e85d04;
+  color: white;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.restaurant-list {
+  display: grid;
+  gap: 15px;
+}
+
+.restaurant-card {
+  padding: 20px;
+}
+
+.restaurant-card strong {
+  color: #e85d04;
+}
+
+.result {
+  margin-top: 25px;
+}
+
+.messages {
+  height: 350px;
+  overflow-y: auto;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.bot,
+.user {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.bot {
+  background: #eee;
+}
+
+.user {
+  background: #e85d04;
+  color: white;
+  margin-left: auto;
+}
+
+.chat-input {
+  display: flex;
+  gap: 8px;
+}
+
+.chat-input input {
+  margin: 0;
+}
