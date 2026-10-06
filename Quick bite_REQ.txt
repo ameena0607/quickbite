@@ -1,0 +1,31 @@
+Quick bite
+Req
+AMEENA
+1. Login and registration
+2. Shortest route possible
+3. Restaurants based on ratings
+4. Recommendation chatbots
+ALAN
+5. Complaint management chatbots
+6. Offers based on number of purchases
+7. Sections for quick snacks and beverages
+8. Dining out option
+EDWIN
+9. Student offers
+10. Group ordering facility from different food spots
+11. View live menu updates
+12. Option for pickup, drop-off, and dining
+BALU
+13. App membership options
+14. Veg and non-veg system including eggs
+15. Creative notification based on timings
+16. Web application version and mobile lite application
+SREEDEV
+17. OTT platform integration
+18. Comparison between hotels and recommend based on rating, price
+19. Refund within 2working days
+
+SAHAL
+20. Tipping for partners
+21. Features for differently abled people
+22. Job if no money
