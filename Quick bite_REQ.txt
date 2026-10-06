@@ -24,7 +24,7 @@ SREEDEV
 17. OTT platform integration
 18. Comparison between hotels and recommend based on rating, price
 19. Refund within 2working days
-20. handling night work
+
 SAHAL
 20. Tipping for partners
 21. Features for differently abled people

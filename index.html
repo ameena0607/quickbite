@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f2eb">
+  <title>Quickbite | Good food, close by</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Quickbite home"><span class="brand-mark">q</span><span>quickbite<span class="brand-period">.</span></span></a>
+    <nav class="primary-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#menu">Order food</a>
+      <a class="nav-link" href="#dining">Dining out</a>
+      <button class="nav-link" id="group-nav">Group order</button>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-button" id="accessibility-button" aria-label="Accessibility settings" title="Accessibility settings"><span aria-hidden="true">◐</span></button>
+      <button class="icon-button notification-button" id="notification-button" aria-label="Notifications" title="Notifications"><span aria-hidden="true">♧</span><i></i></button>
+      <button class="profile-button" id="account-button"><span class="avatar">A</span><span id="account-label">Sign in</span></button>
+    </div>
+  </header>
+
+  <main id="top" class="page-shell">
+    <section class="welcome-row" aria-label="Delivery location">
+      <div><span class="eyebrow">TUESDAY, OCTOBER 6</span><h1>Good food, <em>good mood.</em></h1><p class="location-line"><span aria-hidden="true">⌖</span> Delivering to <strong>Campus, Main Gate</strong> <button id="address-button">Change</button></p></div>
+      <button class="location-card" id="route-button"><span class="route-icon" aria-hidden="true">↗</span><span><strong>Find the quickest route</strong><small>Smart delivery routes near you</small></span><span class="chevron">›</span></button>
+    </section>
+
+    <section class="promo-banner" aria-label="Today's offer">
+      <div class="promo-copy"><span class="promo-kicker">A LITTLE EXTRA, ON US</span><h2>Your next favorite<br>is closer than you think.</h2><p id="offer-copy">Order a little more. Get a little more back.</p><button class="light-button" id="offers-button">See your offers <span aria-hidden="true">→</span></button></div>
+      <div class="promo-photo" role="img" aria-label="Freshly made sandwich with greens"></div>
+      <span class="promo-stamp">GOOD<br>THINGS<br>INSIDE</span>
+    </section>
+
+    <section class="quick-controls" aria-label="Menu controls">
+      <div class="mode-switch" role="group" aria-label="Order type">
+        <button class="mode-button active" data-mode="delivery">Delivery</button>
+        <button class="mode-button" data-mode="pickup">Pickup</button>
+        <button class="mode-button" data-mode="dinein">Dine in</button>
+      </div>
+      <label class="search-box"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Dishes, cafes, or cravings" aria-label="Search dishes and restaurants"><kbd>⌘ K</kbd></label>
+      <label class="diet-toggle"><input id="veg-toggle" type="checkbox"><span class="toggle-track"></span><span>Veg only</span></label>
+    </section>
+
+    <div class="content-grid">
+      <div class="main-column">
+        <section class="menu-section" id="menu">
+          <div class="section-heading"><div><span class="eyebrow">PICK YOUR MOOD</span><h2>Quick picks</h2></div><span class="live-status"><i></i> Menu updated <span id="updated-time">just now</span></span></div>
+          <div class="category-list" role="group" aria-label="Filter menu by category">
+            <button class="category-chip active" data-category="all"><span>✳</span> All</button>
+            <button class="category-chip" data-category="quick"><span>◒</span> Quick snacks</button>
+            <button class="category-chip" data-category="beverage"><span>◉</span> Beverages</button>
+            <button class="category-chip" data-category="meals"><span>▤</span> Meals</button>
+            <button class="category-chip" data-category="dessert"><span>◇</span> Something sweet</button>
+          </div>
+          <div class="results-line"><p id="results-label">Tasty things near campus</p><button class="text-button" id="compare-button">Compare restaurants <span aria-hidden="true">↗</span></button></div>
+          <div class="food-grid" id="food-grid" aria-live="polite"></div>
+          <p class="empty-state" id="empty-state" hidden>No bites match that search. Try another dish or cafe.</p>
+        </section>
+
+        <section class="dining-section" id="dining">
+          <div class="section-heading"><div><span class="eyebrow">TAKE A SEAT</span><h2>Good tables, great food</h2></div><button class="text-button" id="dining-button">Explore dining out <span aria-hidden="true">→</span></button></div>
+          <div class="dining-strip">
+            <div class="dining-photo dining-photo-one" role="img" aria-label="Bright cafe dining room"></div>
+            <div class="dining-details"><span class="rating">★ 4.8 <span>· 0.6 km away</span></span><h3>The Green Table</h3><p>Fresh plates · Campus Road</p><div class="dining-bottom"><span>Table for two from <strong>₹350</strong></span><button class="small-button" data-dine="The Green Table">Book table</button></div></div>
+            <div class="dining-photo dining-photo-two" role="img" aria-label="Fresh bowl of noodles"></div>
+            <div class="dining-details"><span class="rating">★ 4.6 <span>· 1.2 km away</span></span><h3>Chilli & Lime</h3><p>Asian bowls · Library Lane</p><div class="dining-bottom"><span>Table for two from <strong>₹450</strong></span><button class="small-button" data-dine="Chilli & Lime">Book table</button></div></div>
+          </div>
+        </section>
+
+        <section class="feature-links" aria-label="More Quickbite features">
+          <button class="feature-tile student-tile" id="student-button"><span class="tile-icon">ID</span><span><strong>Student perks</strong><small>Campus-only prices and deals</small></span><span class="chevron">›</span></button>
+          <button class="feature-tile membership-tile" id="membership-button"><span class="tile-icon">✦</span><span><strong>Quickbite Plus</strong><small>Membership that gives back</small></span><span class="chevron">›</span></button>
+          <button class="feature-tile stream-tile" id="stream-button"><span class="tile-icon">▶</span><span><strong>Snack & stream</strong><small>Perks from entertainment partners</small></span><span class="chevron">›</span></button>
+        </section>
+
+        <footer class="page-footer"><span>Made for the moments between everything.</span><div><button data-info="refund">Refund help</button><button data-info="jobs">Work with us</button><button id="tip-button">Tip a partner</button></div></footer>
+      </div>
+
+      <aside class="order-panel" aria-label="Your order">
+        <div class="order-header"><div><span class="eyebrow">YOUR HUNGER, HANDLED</span><h2>Your order</h2></div><span class="bag-icon" aria-hidden="true">▱<b id="cart-count">0</b></span></div>
+        <div class="order-mode-label"><span class="mode-dot"></span><span id="mode-label">Delivery to Campus, Main Gate</span><button id="edit-mode">Edit</button></div>
+        <div class="cart-items" id="cart-items"><div class="cart-empty"><span class="empty-plate" aria-hidden="true">◯</span><strong>Nothing in the bag. Yet.</strong><p>Pick a quick bite and we’ll take it from here.</p></div></div>
+        <div class="cart-footer" id="cart-footer" hidden>
+          <div class="offer-applied" id="offer-applied" hidden>✦ <span>Purchase-count offer applied</span></div>
+          <div class="price-row"><span>Subtotal</span><strong id="subtotal">₹0</strong></div>
+          <div class="price-row"><span id="fee-label">Delivery fee</span><span id="fee">₹25</span></div>
+          <div class="price-row discount-row" id="discount-row" hidden><span>Offer savings</span><span id="discount">−₹0</span></div>
+          <div class="price-row total-row"><span>Total</span><strong id="total">₹0</strong></div>
+          <button class="checkout-button" id="checkout-button">Continue to checkout <span aria-hidden="true">→</span></button>
+          <button class="group-link" id="group-cart-button">＋ Start a group order</button>
+          <p class="secure-note">Secure checkout · Refunds within 2 working days</p>
+        </div>
+        <div class="partner-note"><span aria-hidden="true">✳</span><span>Every order supports a local food spot.</span></div>
+      </aside>
+    </div>
+  </main>
+
+  <button class="chat-launcher" id="chat-launcher" aria-label="Open Quickbite assistant"><span aria-hidden="true">✳</span><span class="chat-label">Need a hand?</span></button>
+  <section class="chat-panel" id="chat-panel" aria-label="Quickbite assistant" hidden>
+    <div class="chat-header"><div><span class="chat-avatar">✳</span><span><strong>Quickbite buddy</strong><small>Here for food and order help</small></span></div><button id="chat-close" aria-label="Close chat">×</button></div>
+    <div class="chat-messages" id="chat-messages" aria-live="polite"><div class="chat-message bot-message">Hey! I can recommend something tasty or help sort out an order. What do you need?</div></div>
+    <div class="chat-shortcuts"><button data-chat="recommend">Pick for me</button><button data-chat="complaint">Order issue</button></div>
+    <form class="chat-form" id="chat-form"><input id="chat-input" placeholder="Type a message…" aria-label="Message the assistant"><button aria-label="Send message">↑</button></form>
+  </section>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="app-dialog" class="app-dialog"><button class="dialog-close" id="dialog-close" aria-label="Close dialog">×</button><div id="dialog-content"></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
