@@ -21,9 +21,11 @@ jobs:
       with:
         node-version: '20'
 
-    # Step 3: Install an HTML linter (htmlhint) and broken link checker (lychee)
+        # Step 3: Install an HTML linter (htmlhint) and broken link checker (lychee)
     - name: Install CI tools
-      run: npm install -g htmlhint lychee
+      run: |
+        npm install -g htmlhint
+        cargo install lychee
 
     # Step 4: Run the linter to catch unclosed tags or syntax mistakes
     - name: Run HTML Hint Linting
