@@ -1,0 +1,34 @@
+name: HTML Continuous Integration
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  validate-html:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Download your repository code
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # Step 2: Set up Node.js to use lightweight linters
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    # Step 3: Install an HTML linter (htmlhint) and broken link checker (lychee)
+    - name: Install CI tools
+      run: npm install -g htmlhint lychee
+
+    # Step 4: Run the linter to catch unclosed tags or syntax mistakes
+    - name: Run HTML Hint Linting
+      run: htmlhint "**/*.html"
+
+    # Step 5: Verify that all links inside your HTML files are valid and working
+    - name: Check for broken links
+      run: lychee "**/*.html"
